@@ -7,9 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "NotificarePushLib.h"
 
-@interface SnAppDelegate : UIResponder <UIApplicationDelegate>
+@class HomeViewController;
+@class LoginViewController;
+@class BaseViewController;
+@class SplashViewController;
 
+@interface SnAppDelegate : UIResponder <UIApplicationDelegate,UINavigationControllerDelegate,NotificarePushLibDelegate>
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) SplashViewController *mainViewController;
+//@property (strong, nonatomic) BaseViewController *mainViewController;
+@property (strong, nonatomic) LoginViewController* loginViewController;
+@property (strong, nonatomic) BaseViewController* baseViewController;
+
+@property BOOL isNavigating;
+
+- (void)resetMainViewController;
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSData * theDeviceToken;
+@property (strong, nonatomic) NSString * theDeviceUUID;
+
+- (void)openSession;
 
 @end
