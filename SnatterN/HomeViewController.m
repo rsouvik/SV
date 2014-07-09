@@ -9,7 +9,7 @@
 #import "HomeViewController.h"
 #import "QuesDetailViewController.h"
 #import "Question.h"
-#import "API.h"
+#import "SnAPI.h"
 #import "SnAppDelegate.h"
 #import "SVProgressHUD.h"
 #import "Post.h"

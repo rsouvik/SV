@@ -8,9 +8,14 @@
 
 #import "NewQViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import "API.h"
+#import "SnAPI.h"
+#import "SnSyncEngine.h"
+#import "SnCoreDataController.h"
 
 @interface NewQViewController ()
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSManagedObject *question;
 
 @end
 
@@ -47,8 +52,27 @@
 }
 - (IBAction)done:(id)sender
 {
-    [self postQ];
+    [self newpostQ];
 	[self.delegate NewQViewControllerDidSave:self];
+}
+
+- (void) newpostQ {
+    
+    [self.question setValue:self.questionText.text forKey:@"questxt"];
+    [self.question setValue:[NSNumber numberWithInt:SDObjectCreated] forKey:@"syncStatus"];
+    
+    [self.managedObjectContext performBlockAndWait:^{
+        NSError *error = nil;
+        BOOL saved = [self.managedObjectContext save:&error];
+        if (!saved) {
+            // do some real error handling
+            NSLog(@"Could not save question due to %@", error);
+        }
+        //Save the context
+        [[SnCoreDataController sharedInstance] saveMasterContext];
+    }];
+    
+    //completion block check?
 }
 
 //post Q

@@ -8,7 +8,7 @@
 
 #import "NotifViewController.h"
 #import "NotifDetailViewController.h"
-#import "API.h"
+#import "SnAPI.h"
 #import "SnAppDelegate.h"
 #import "SVProgressHUD.h"
 #import "Notif.h"
