@@ -14,6 +14,8 @@
 
 @property (nonatomic, retain) NSString * questxt;
 @property (nonatomic, retain) NSDate * timestamp;
+@property (nonatomic, retain) NSNumber * timer;
+@property (nonatomic, retain) NSNumber *tokens;
 @property (nonatomic, retain) NSSet *qtoa;
 @property (nonatomic, retain) NSManagedObject *qtou;
 @end

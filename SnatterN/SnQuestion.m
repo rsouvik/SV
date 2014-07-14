@@ -15,8 +15,18 @@
 
 @dynamic questxt;
 @dynamic timestamp;
+@dynamic timer;
+@dynamic tokens;
 @dynamic qtoa;
 @dynamic qtou;
+
+- (void)addQtoa:(NSSet *)values {
+    
+}
+
+- (void)removeQtoa:(NSSet *)values {
+    
+}
 
 - (NSDictionary *)JSONToCreateObjectOnServer {
     NSString *jsonString = nil;
@@ -24,15 +34,11 @@
                           @"Date", @"__type",
                           [[SnSyncEngine sharedEngine] dateStringForAPIUsingDate:self.timestamp], @"iso" , nil];
     
-    /*NSDictionary *jsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                    self.name, @"name",
-                                    self.giftIdeas, @"giftIdeas",
-                                    self.facebook, @"facebook",
-                                    date, @"date", nil];*/
     
     NSDictionary *jsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                     self.questxt, @"questxt",
-                                    date, @"date", nil];
+                                    date, @"date", self.tokens, @"tokens",
+                                    self.timer, @"timer", nil];
     
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization

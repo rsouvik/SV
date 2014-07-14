@@ -17,6 +17,8 @@
 
 @dynamic anstxt;
 @dynamic timestamp;
+@dynamic tokens;
+@dynamic rating;
 @dynamic atoq;
 @dynamic atou;
 
@@ -27,7 +29,8 @@
                           [[SnSyncEngine sharedEngine] dateStringForAPIUsingDate:self.timestamp], @"iso" , nil];
     
     NSDictionary *jsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                    self.anstxt, @"anstxt",
+                                    self.anstxt, @"anstxt", self.tokens, @"tokens",
+                                    self.rating, @"rating",
                                     date, @"date", nil];
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization

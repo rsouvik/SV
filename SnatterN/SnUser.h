@@ -15,6 +15,8 @@
 
 @property (nonatomic, retain) NSString * socialID;
 @property (nonatomic, retain) NSString * uname;
+@property (nonatomic, retain) NSNumber *tokens;
+@property (nonatomic, retain) NSNumber *rating;
 @property (nonatomic, retain) NSSet *utoa;
 @property (nonatomic, retain) NSSet *utoq;
 @end

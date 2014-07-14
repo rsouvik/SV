@@ -15,6 +15,8 @@
 
 @dynamic socialID;
 @dynamic uname;
+@dynamic rating;
+@dynamic tokens;
 @dynamic utoa;
 @dynamic utoq;
 
@@ -27,6 +29,8 @@
     NSDictionary *jsonDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                     self.uname, @"uname",
                                     self.socialID, @"socialID",
+                                    self.rating, @"rating",
+                                    self.tokens, @"tokens",
                                     nil];
     NSError *error = nil;
     NSData *jsonData = [NSJSONSerialization
