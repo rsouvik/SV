@@ -12,11 +12,10 @@
 
 typedef void (^JSONResponseBlock)(NSDictionary* json);
 
-NSDictionary *mapsynccommand = [[NSDictionary alloc] initWithObjectsAndKeys:@"SnQuestion",@"syncuserques",@"SnAnswer",@"syncuseranswer" nil];
-
 @interface API : AFHTTPClient
 
 @property (strong, nonatomic) NSDictionary* user;
+@property (strong, nonatomic) NSDictionary* mapsynccommand;
 
 +(API*)sharedInstance;
 //check whether there's an authorized user

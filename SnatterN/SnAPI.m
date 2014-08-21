@@ -27,6 +27,7 @@
 @implementation API
 
 @synthesize user;
+NSDictionary *mapsynccommand = nil;
 
 #pragma mark - Singleton methods
 /**
@@ -40,6 +41,11 @@
     });
     
     return sharedInstance;
+}
+
++ (void)initialize {
+    if (!mapsynccommand)
+        mapsynccommand = [[NSDictionary alloc] initWithObjectsAndKeys:@"SnQuestion",@"syncuserques",@"SnAnswer",@"syncuseranswer", nil];
 }
 
 #pragma mark - init

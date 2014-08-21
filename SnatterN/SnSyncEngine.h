@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-NSDictionary *maprelation = [[NSDictionary alloc] initWithObjectsAndKeys:@"SnQuestion",@"utoq",@"SnAnswer",@"utoa" nil];
-
 typedef enum {
     SDObjectSynced = 0,
     SDObjectCreated,

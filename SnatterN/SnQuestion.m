@@ -2,31 +2,29 @@
 //  SnQuestion.m
 //  SnatterN
 //
-//  Created by Souvik Ray on 2/27/14.
+//  Created by Souvik Ray on 7/20/14.
 //  Copyright (c) 2014 com.snatter. All rights reserved.
 //
 
 #import "SnQuestion.h"
-#import "NSManagedObjectJSON.h"
+#import "SnAnswer.h"
+#import "SnUser.h"
 #import "SnSyncEngine.h"
+#import "NSManagedObjectJSON.h"
 
 
 @implementation SnQuestion
 
+@dynamic createdAt;
+@dynamic objectid;
 @dynamic questxt;
-@dynamic timestamp;
+@dynamic syncStatus;
 @dynamic timer;
+@dynamic timestamp;
 @dynamic tokens;
+@dynamic updatedAt;
 @dynamic qtoa;
 @dynamic qtou;
-
-- (void)addQtoa:(NSSet *)values {
-    
-}
-
-- (void)removeQtoa:(NSSet *)values {
-    
-}
 
 - (NSDictionary *)JSONToCreateObjectOnServer {
     NSString *jsonString = nil;
@@ -53,6 +51,5 @@
     
     return jsonDictionary;
 }
-
 
 @end

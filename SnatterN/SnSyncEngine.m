@@ -13,6 +13,7 @@
 
 NSString * const kSnSyncEngineInitialCompleteKey = @"SnSyncEngineInitialSyncCompleted";
 NSString * const kSnSyncEngineSyncCompletedNotificationName = @"SnSyncEngineSyncCompleted";
+NSDictionary *maprelation = nil;
 
 @interface SnSyncEngine ()
 
@@ -32,6 +33,11 @@ NSString * const kSnSyncEngineSyncCompletedNotificationName = @"SnSyncEngineSync
  We want to sync: Client->Server: Qs asked by user; As answered by user, other related stuff (book-keeping) [also deleted stuff]
                   Server->Client: As answered for client-asked Qs [deleted stuff], Qs routed to the user (client) [notification]    
  */
+
++ (void)initialize {
+    if(!maprelation)
+      maprelation = [[NSDictionary alloc] initWithObjectsAndKeys:@"SnQuestion",@"utoq",@"SnAnswer",@"utoa", nil];  
+}
 
 + (SnSyncEngine *)sharedEngine {
     static SnSyncEngine *sharedEngine = nil;

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A226604E197BAEEC00C935D3 /* SnQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = A226604D197BAEEC00C935D3 /* SnQuestion.m */; };
+		A2266051197BB08100C935D3 /* SnAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2266050197BB08100C935D3 /* SnAnswer.m */; };
+		A2266054197BB0B300C935D3 /* SnUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A2266053197BB0B300C935D3 /* SnUser.m */; };
 		A245565618774AB800B826D5 /* NotifDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A245565518774AB800B826D5 /* NotifDetailViewController.m */; };
 		A25B0C5B189669C8007599BB /* libNotificarePushLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A25B0C5A189669C8007599BB /* libNotificarePushLib.a */; };
 		A28423F918726E210033623B /* NotifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28423F818726E210033623B /* NotifViewController.m */; };
@@ -55,19 +58,26 @@
 		A286F23418965C8E0003EFEB /* Notificare.plist in Resources */ = {isa = PBXBuildFile; fileRef = A286F23118965C8E0003EFEB /* Notificare.plist */; };
 		A286F23518965C8E0003EFEB /* NotificareResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A286F23218965C8E0003EFEB /* NotificareResources.bundle */; };
 		A289067618866C1200729147 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = A289067518866C1200729147 /* Post.m */; };
-		A289874618C0629800F1B8D5 /* SnQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = A289874518C0629800F1B8D5 /* SnQuestion.m */; };
-		A289874918C062D500F1B8D5 /* SnUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A289874818C062D500F1B8D5 /* SnUser.m */; };
-		A289874C18C0630D00F1B8D5 /* SnAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = A289874B18C0630D00F1B8D5 /* SnAnswer.m */; };
 		A289874F18C1A06F00F1B8D5 /* SnSyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A289874E18C1A06F00F1B8D5 /* SnSyncEngine.m */; };
 		A289875218C2A3FF00F1B8D5 /* SnCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = A289875118C2A3FF00F1B8D5 /* SnCoreDataController.m */; };
 		A289D50A1880BE4200EB46A0 /* JSONBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A289D5091880BE4200EB46A0 /* JSONBuilder.m */; };
 		A28BC26C18BC8E4700F19340 /* SnAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BC26B18BC8E4700F19340 /* SnAPI.m */; };
 		A28EF41318DBB7A50014A7F2 /* NSManagedObjectJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A28EF41218DBB7A50014A7F2 /* NSManagedObjectJSON.m */; };
 		A296324D18BEFED000093E64 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A296324C18BEFED000093E64 /* CoreData.framework */; };
-		A296325018BF018D00093E64 /* SnatterN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A296324E18BF018D00093E64 /* SnatterN.xcdatamodeld */; };
+		A2970E8D1989AC6700D2B062 /* SnatterN.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A2970E8C1989AC6600D2B062 /* SnatterN.xcdatamodel */; };
+		A2970E901989B35C00D2B062 /* SnatterN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2970E8E1989B35C00D2B062 /* SnatterN.xcdatamodeld */; };
+		A2970ECA198A2B8700D2B062 /* SnatterN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2970EC8198A2B8700D2B062 /* SnatterN.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A224695E1992E3780013517A /* SnatterN 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SnatterN 2.xcdatamodel"; sourceTree = "<group>"; };
+		A224695F1992EB5E0013517A /* SnatterN_3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = SnatterN_3.xcdatamodel; sourceTree = "<group>"; };
+		A226604C197BAEEC00C935D3 /* SnQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnQuestion.h; sourceTree = "<group>"; };
+		A226604D197BAEEC00C935D3 /* SnQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnQuestion.m; sourceTree = "<group>"; };
+		A226604F197BB08100C935D3 /* SnAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnAnswer.h; sourceTree = "<group>"; };
+		A2266050197BB08100C935D3 /* SnAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnAnswer.m; sourceTree = "<group>"; };
+		A2266052197BB0B300C935D3 /* SnUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnUser.h; sourceTree = "<group>"; };
+		A2266053197BB0B300C935D3 /* SnUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnUser.m; sourceTree = "<group>"; };
 		A245565418774AB800B826D5 /* NotifDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifDetailViewController.h; sourceTree = "<group>"; };
 		A245565518774AB800B826D5 /* NotifDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifDetailViewController.m; sourceTree = "<group>"; };
 		A25B0C5A189669C8007599BB /* libNotificarePushLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNotificarePushLib.a; path = "../../IOS Downloads/notificare-demo-ios-ws-master/NotificareDemoApp/libNotificarePushLib.a"; sourceTree = "<group>"; };
@@ -192,12 +202,6 @@
 		A286F23218965C8E0003EFEB /* NotificareResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NotificareResources.bundle; path = "../../IOS Downloads/notificare-push-lib-1.0-RC3/NotificareResources.bundle"; sourceTree = "<group>"; };
 		A289067418866C1200729147 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		A289067518866C1200729147 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
-		A289874418C0629800F1B8D5 /* SnQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnQuestion.h; sourceTree = "<group>"; };
-		A289874518C0629800F1B8D5 /* SnQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnQuestion.m; sourceTree = "<group>"; };
-		A289874718C062D500F1B8D5 /* SnUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnUser.h; sourceTree = "<group>"; };
-		A289874818C062D500F1B8D5 /* SnUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnUser.m; sourceTree = "<group>"; };
-		A289874A18C0630D00F1B8D5 /* SnAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnAnswer.h; sourceTree = "<group>"; };
-		A289874B18C0630D00F1B8D5 /* SnAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnAnswer.m; sourceTree = "<group>"; };
 		A289874D18C1A06F00F1B8D5 /* SnSyncEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnSyncEngine.h; sourceTree = "<group>"; };
 		A289874E18C1A06F00F1B8D5 /* SnSyncEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnSyncEngine.m; sourceTree = "<group>"; };
 		A289875018C2A3FF00F1B8D5 /* SnCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnCoreDataController.h; sourceTree = "<group>"; };
@@ -209,7 +213,9 @@
 		A28EF41118DBB7A50014A7F2 /* NSManagedObjectJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectJSON.h; sourceTree = "<group>"; };
 		A28EF41218DBB7A50014A7F2 /* NSManagedObjectJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectJSON.m; sourceTree = "<group>"; };
 		A296324C18BEFED000093E64 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A296324F18BF018D00093E64 /* SnatterN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnatterN.xcdatamodel; sourceTree = "<group>"; };
+		A2970E8C1989AC6600D2B062 /* SnatterN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnatterN.xcdatamodel; sourceTree = SOURCE_ROOT; };
+		A2970E8F1989B35C00D2B062 /* SnatterN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnatterN.xcdatamodel; sourceTree = "<group>"; };
+		A2970EC9198A2B8700D2B062 /* SnatterN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnatterN.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +287,9 @@
 		A28572C31853F11E00CA2D31 /* SnatterN */ = {
 			isa = PBXGroup;
 			children = (
+				A2970EC8198A2B8700D2B062 /* SnatterN.xcdatamodeld */,
+				A2970E8E1989B35C00D2B062 /* SnatterN.xcdatamodeld */,
+				A2970E8C1989AC6600D2B062 /* SnatterN.xcdatamodel */,
 				A289875318C8734A00F1B8D5 /* Model */,
 				A25B0C5A189669C8007599BB /* libNotificarePushLib.a */,
 				A286F1E718965C8E0003EFEB /* Notificare */,
@@ -343,7 +352,6 @@
 				A28572CF1853F11E00CA2D31 /* Default.png */,
 				A28572D11853F11E00CA2D31 /* Default@2x.png */,
 				A28572D31853F11E00CA2D31 /* Default-568h@2x.png */,
-				A296324E18BF018D00093E64 /* SnatterN.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -652,12 +660,12 @@
 		A289875318C8734A00F1B8D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A289874A18C0630D00F1B8D5 /* SnAnswer.h */,
-				A289874B18C0630D00F1B8D5 /* SnAnswer.m */,
-				A289874718C062D500F1B8D5 /* SnUser.h */,
-				A289874818C062D500F1B8D5 /* SnUser.m */,
-				A289874418C0629800F1B8D5 /* SnQuestion.h */,
-				A289874518C0629800F1B8D5 /* SnQuestion.m */,
+				A2266052197BB0B300C935D3 /* SnUser.h */,
+				A2266053197BB0B300C935D3 /* SnUser.m */,
+				A226604F197BB08100C935D3 /* SnAnswer.h */,
+				A2266050197BB08100C935D3 /* SnAnswer.m */,
+				A226604C197BAEEC00C935D3 /* SnQuestion.h */,
+				A226604D197BAEEC00C935D3 /* SnQuestion.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -732,6 +740,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2970E8D1989AC6700D2B062 /* SnatterN.xcdatamodel in Sources */,
 				A28572CA1853F11E00CA2D31 /* main.m in Sources */,
 				A28572CE1853F11E00CA2D31 /* SnAppDelegate.m in Sources */,
 				A28572DA1853F11E00CA2D31 /* SnViewController.m in Sources */,
@@ -759,13 +768,14 @@
 				A289D50A1880BE4200EB46A0 /* JSONBuilder.m in Sources */,
 				A289067618866C1200729147 /* Post.m in Sources */,
 				A28BC26C18BC8E4700F19340 /* SnAPI.m in Sources */,
-				A296325018BF018D00093E64 /* SnatterN.xcdatamodeld in Sources */,
-				A289874618C0629800F1B8D5 /* SnQuestion.m in Sources */,
-				A289874918C062D500F1B8D5 /* SnUser.m in Sources */,
-				A289874C18C0630D00F1B8D5 /* SnAnswer.m in Sources */,
 				A289874F18C1A06F00F1B8D5 /* SnSyncEngine.m in Sources */,
 				A289875218C2A3FF00F1B8D5 /* SnCoreDataController.m in Sources */,
 				A28EF41318DBB7A50014A7F2 /* NSManagedObjectJSON.m in Sources */,
+				A226604E197BAEEC00C935D3 /* SnQuestion.m in Sources */,
+				A2266051197BB08100C935D3 /* SnAnswer.m in Sources */,
+				A2266054197BB0B300C935D3 /* SnUser.m in Sources */,
+				A2970E901989B35C00D2B062 /* SnatterN.xcdatamodeld in Sources */,
+				A2970ECA198A2B8700D2B062 /* SnatterN.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,12 +925,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A296324E18BF018D00093E64 /* SnatterN.xcdatamodeld */ = {
+		A2970E8E1989B35C00D2B062 /* SnatterN.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A296324F18BF018D00093E64 /* SnatterN.xcdatamodel */,
+				A224695F1992EB5E0013517A /* SnatterN_3.xcdatamodel */,
+				A224695E1992E3780013517A /* SnatterN 2.xcdatamodel */,
+				A2970E8F1989B35C00D2B062 /* SnatterN.xcdatamodel */,
 			);
-			currentVersion = A296324F18BF018D00093E64 /* SnatterN.xcdatamodel */;
+			currentVersion = A2970E8F1989B35C00D2B062 /* SnatterN.xcdatamodel */;
+			path = SnatterN.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		A2970EC8198A2B8700D2B062 /* SnatterN.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2970EC9198A2B8700D2B062 /* SnatterN.xcdatamodel */,
+			);
+			currentVersion = A2970EC9198A2B8700D2B062 /* SnatterN.xcdatamodel */;
 			path = SnatterN.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

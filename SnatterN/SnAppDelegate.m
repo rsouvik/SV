@@ -511,6 +511,10 @@ isNavigating = _isNavigating;
         return _managedObjectModel;
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"SnatterN" withExtension:@"momd"];
+    //NSString *modelPath = [[NSBundle mainBundle] pathForResource:@"SnatterN" ofType:@"mom"];
+    //NSURL *modelURL = [NSURL fileURLWithPath:modelPath];
+
+    //NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"SnatterN_3" withExtension:@"mom" subdirectory:@"SnatterN.momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }

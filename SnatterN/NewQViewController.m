@@ -36,6 +36,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.managedObjectContext = [[SnCoreDataController sharedInstance] newManagedObjectContext];
+    self.question = [NSEntityDescription insertNewObjectForEntityForName:@"SnQuestion" inManagedObjectContext:self.managedObjectContext];
 	// Do any additional setup after loading the view.
     [questionText becomeFirstResponder];
 }
@@ -60,6 +62,8 @@
     
     [self.question setValue:self.questionText.text forKey:@"questxt"];
     [self.question setValue:[NSNumber numberWithInt:SDObjectCreated] forKey:@"syncStatus"];
+    [self.question setValue:NULL forKey:@"timer"];
+    [self.question setValue:NULL forKey:@"tokens"];
     
     [self.managedObjectContext performBlockAndWait:^{
         NSError *error = nil;

@@ -2,23 +2,26 @@
 //  SnAnswer.m
 //  SnatterN
 //
-//  Created by Souvik Ray on 2/27/14.
+//  Created by Souvik Ray on 7/20/14.
 //  Copyright (c) 2014 com.snatter. All rights reserved.
 //
 
 #import "SnAnswer.h"
 #import "SnQuestion.h"
 #import "SnUser.h"
-#import "NSManagedObjectJSON.h"
 #import "SnSyncEngine.h"
+#import "NSManagedObjectJSON.h"
 
 
 @implementation SnAnswer
 
 @dynamic anstxt;
+@dynamic createdAt;
+@dynamic objectid;
+@dynamic rating;
 @dynamic timestamp;
 @dynamic tokens;
-@dynamic rating;
+@dynamic updatedAt;
 @dynamic atoq;
 @dynamic atou;
 
@@ -45,6 +48,5 @@
     
     return jsonDictionary;
 }
-
 
 @end
